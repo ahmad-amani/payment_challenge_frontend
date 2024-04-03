@@ -11,7 +11,7 @@ const props = defineProps(['name', 'price', 'description', 'id'])
         <div class="mt-auto">
             <button @click="openModal(PurchaseModal, { name, price, description, id })"
                 class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                pay now {{ price }}t
+                pay now {{ price }}r
             </button>
         </div>
     </div>
