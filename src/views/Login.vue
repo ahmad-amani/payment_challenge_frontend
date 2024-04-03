@@ -26,7 +26,7 @@ const { password, username, login } = useAuthCompose()
       <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form class="space-y-6">
           <div>
-            <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Username</label>
+            <label for="email" class="block dark:text-white text-sm font-medium leading-6 text-gray-900">Username</label>
             <div class="mt-2">
               <input v-model="username" id="email" name="email" type="text" autocomplete="email" required=""
                 class="p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  sm:text-sm sm:leading-6" />
@@ -35,7 +35,7 @@ const { password, username, login } = useAuthCompose()
 
           <div>
             <div class="flex items-center justify-between">
-              <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+              <label for="password" class="block text-sm font-medium leading-6 text-gray-900 dark:text-white">Password</label>
             </div>
             <div class="mt-2">
               <input id="password" v-model="password" name="password" type="password" autocomplete="current-password"
