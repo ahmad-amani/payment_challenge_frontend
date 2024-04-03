@@ -64,6 +64,16 @@ const router = createRouter({
         authRequired: true
       }
     },
+
+    {
+      path: '/transactions',
+      name: 'transactions',
+      component: () => import('../views/Transactions.vue'),
+      meta: {
+        layout: Main,
+        authRequired: true
+      }
+    },
     {
       path: "/:pathMatch(.*)*",
       name: 'error',

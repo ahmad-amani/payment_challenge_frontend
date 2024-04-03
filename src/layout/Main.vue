@@ -13,17 +13,18 @@ const { logout } = useAuthCompose()
       <header class="mr-4">
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-        <div class="wrapper">
+        <div class="wrapper overflow-hidden">
           <HelloWorld msg="Paystar Challenge!" />
 
-          <nav v-if="!auth.user">
+          <nav class="flex overflow-x-auto" v-if="!auth.user">
             <RouterLink to="/login">Login</RouterLink>
             <RouterLink to="/register">Register</RouterLink>
           </nav>
-          <nav v-else>
+          <nav class="flex overflow-x-auto" v-else>
             <RouterLink to="/dashboard">Dashboard</RouterLink>
             <RouterLink to="/settings">Settings</RouterLink>
             <RouterLink to="/packages">Packages</RouterLink>
+            <RouterLink to="/transactions">Transactions</RouterLink>
 
             <a href="#" @click="() => {
             logout()
