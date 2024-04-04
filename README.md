@@ -1,3 +1,5 @@
+live demo at http://87.107.121.108:5174
+
 # paystar_frontend
 
 This template should help get you started developing with Vue 3 in Vite.
